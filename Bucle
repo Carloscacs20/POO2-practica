@@ -1,0 +1,22 @@
+ /*for (int cont=0;cont<10;cont++ ){
+            System.out.println("Estoy dando vueltas con bucle For: " + cont);
+        }*/
+        /*int cont =0;
+        while (cont<=10){
+            System.out.println("Estoy dando vueltas con while: "+ cont);
+            cont++;
+        }*/
+
+        Scanner lector = new Scanner(System.in);
+        int n;
+        System.out.println("Ingrese un numero entero positivo: ");
+        n = lector.nextInt();
+
+        if (n>0){
+            for (int i = 1; i<=10;i++){
+                System.out.println(n +" por " + i + " es igual a " + n*i);
+            }
+        }
+        else {
+            System.out.println("El numero ingresado no es correcto" + "Intente de nuevo");
+        }
