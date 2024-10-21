@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Estudiantes {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicitar al usuario el número de estudiantes
+        System.out.print("Ingrese la cantidad de estudiantes: ");
+        int cantidadEstudiantes = scanner.nextInt();
+        scanner.nextLine(); // Limpiar el buffer
+
+        // Crear un arreglo para almacenar los nombres de los estudiantes
+        String[] nombresEstudiantes = new String[cantidadEstudiantes];
+
+        // Bucle para ingresar los nombres de los estudiantes
+        for (int i = 0; i < cantidadEstudiantes; i++) {
+            System.out.print("Ingrese el nombre del estudiante " + (i + 1) + ": ");
+            nombresEstudiantes[i] = scanner.nextLine();
+        }
+
+        // Mostrar los nombres de los estudiantes
+        System.out.println("\nLos nombres de los estudiantes son:");
+        for (String nombre : nombresEstudiantes) {
+            System.out.println(nombre);
+        }
+
+        scanner.close();
+    }
+}
